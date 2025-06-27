@@ -25,6 +25,10 @@
   .navbar .nav-item a:hover {
     border: 2px solid var(--bs-info);
   }
+
+  header {
+    padding: 50px 0;
+  }
 }
 
 @media (min-width: 1200px) {
