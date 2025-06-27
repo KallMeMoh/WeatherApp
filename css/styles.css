@@ -36,7 +36,13 @@ header {
 .navbar .nav-item a.active,
 .navbar .nav-item a:hover {
   color: var(--bs-info);
-  border: 2px solid var(--bs-info);
+}
+
+.navbar-nav li {
+  background-color: var(--lt-primary-color);
+  width: 100%;
+  border-radius: 30px;
+  text-align: center;
 }
 
 main {
@@ -46,8 +52,7 @@ main {
 
 main .location {
   background-image: url(../images/banner.png);
-  background-position: top center;
-  background-size: contain;
+  background-size: 180%;
   background-repeat: no-repeat;
   padding: 70px 0;
   min-height: 350px;

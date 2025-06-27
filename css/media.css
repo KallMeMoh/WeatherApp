@@ -15,6 +15,16 @@
   .container .cond {
     font-size: smaller;
   }
+  .navbar-nav li {
+    background-color: transparent;
+    width: fit-content;
+    border-radius: 0;
+  }
+
+  .navbar .nav-item a.active,
+  .navbar .nav-item a:hover {
+    border: 2px solid var(--bs-info);
+  }
 }
 
 @media (min-width: 1200px) {
