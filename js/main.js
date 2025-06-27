@@ -81,71 +81,71 @@ function updateWeatherCondition(current) {
 
   switch (current?.wind_dir) {
     case 'N':
-      windDirIcon.style.transform = 'rotate(135deg)';
+      windDirIcon.style.transform = 'rotate(90deg)';
       windDir.textContent = 'North';
       break;
     case 'NNE':
-      windDirIcon.style.transform = 'rotate(157.5deg)';
+      windDirIcon.style.transform = 'rotate(112.5deg)';
       windDir.textContent = 'North-NorthEast';
       break;
     case 'NE':
-      windDirIcon.style.transform = 'rotate(180deg)';
+      windDirIcon.style.transform = 'rotate(135deg)';
       windDir.textContent = 'North-East';
       break;
     case 'ENE':
-      windDirIcon.style.transform = 'rotate(202.5deg)';
+      windDirIcon.style.transform = 'rotate(157.5deg)';
       windDir.textContent = 'East-NorthEast';
       break;
     case 'E':
-      windDirIcon.style.transform = 'rotate(225deg)';
+      windDirIcon.style.transform = 'rotate(180deg)';
       windDir.textContent = 'East';
       break;
     case 'ESE':
-      windDirIcon.style.transform = 'rotate(247.5deg)';
+      windDirIcon.style.transform = 'rotate(202.5deg)';
       windDir.textContent = 'East-SouthEast';
       windDir;
     case 'SE':
-      windDirIcon.style.transform = 'rotate(270deg)';
+      windDirIcon.style.transform = 'rotate(225deg)';
       windDir.textContent = 'South-East';
       break;
     case 'SSE':
-      windDirIcon.style.transform = 'rotate(292.5deg)';
+      windDirIcon.style.transform = 'rotate(247.5deg)';
       windDir.textContent = 'South-SouthEast';
       break;
     case 'S':
-      windDirIcon.style.transform = 'rotate(315deg)';
+      windDirIcon.style.transform = 'rotate(270deg)';
       windDir.textContent = 'South';
       break;
     case 'SSW':
-      windDirIcon.style.transform = 'rotate(337.5deg)';
+      windDirIcon.style.transform = 'rotate(292.5deg)';
       windDir.textContent = 'South-SouthWest';
       break;
     case 'SW':
-      windDirIcon.style.transform = 'rotate(0deg)';
+      windDirIcon.style.transform = 'rotate(315deg)';
       windDir.textContent = 'South-West';
       break;
     case 'WSW':
-      windDirIcon.style.transform = 'rotate(22.5deg)';
+      windDirIcon.style.transform = 'rotate(337.5deg)';
       windDir.textContent = 'West-SouthWest';
       break;
     case 'W':
-      windDirIcon.style.transform = 'rotate(45deg)';
+      windDirIcon.style.transform = 'rotate(0deg)';
       windDir.textContent = 'West';
       break;
     case 'WNW':
-      windDirIcon.style.transform = 'rotate(67.5deg)';
+      windDirIcon.style.transform = 'rotate(22.6deg)';
       windDir.textContent = 'West-NorthWest';
       break;
     case 'NW':
-      windDirIcon.style.transform = 'rotate(90deg)';
+      windDirIcon.style.transform = 'rotate(45deg)';
       windDir.textContent = 'North-West';
       break;
     case 'NNW':
-      windDirIcon.style.transform = 'rotate(112.5deg)';
+      windDirIcon.style.transform = 'rotate(67.5deg)';
       windDir.textContent = 'North-NorthWest';
       break;
     default:
-      windDirIcon.style.transform = 'rotate(315deg)';
+      windDirIcon.style.transform = 'rotate(0deg)';
       windDir.textContent = 'Unknown';
   }
 }

@@ -112,16 +112,6 @@ footer .container #subscribeBtn {
   padding: 30px 20px !important;
 }
 
-.card-body i#windDirIcon {
-  border-radius: 50%;
-  width: 12px;
-  height: 12px;
-  overflow: hidden;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .card.rounded-start {
   border-bottom-left-radius: 0 !important;
   border-top-right-radius: var(--bs-border-radius) !important;
