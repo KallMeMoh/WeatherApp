@@ -1,0 +1,152 @@
+:root {
+  --primary-color: #1e202b;
+  --lt-primary-color: #262936;
+  --secondary-color: #009ad8;
+}
+
+body {
+  color: #bfc1c8;
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+header {
+  padding: 50px 0;
+  background-color: var(--primary-color);
+}
+
+.navbar .name {
+  font-size: 0.7em;
+  margin-bottom: 5px !important;
+}
+
+.navbar .tagline {
+  font-size: 0.5em;
+}
+
+.navbar .nav-item a {
+  display: inline-block;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  color: var(--bs-white);
+  padding: 5px 25px !important;
+}
+.navbar .nav-item a.active,
+.navbar .nav-item a:hover {
+  color: var(--bs-info);
+  border: 2px solid var(--bs-info);
+}
+
+main {
+  min-height: 80vh;
+  background-color: var(--primary-color);
+}
+
+main .location {
+  background-image: url(../images/banner.png);
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 70px 0;
+  min-height: 350px;
+}
+
+.location input,
+footer .container input {
+  border-radius: 30px;
+  border: none;
+}
+
+main .search {
+  margin-bottom: 70px;
+}
+
+.location #inputLocation,
+footer #newsletter {
+  background-color: var(--primary-color);
+  width: 100%;
+  padding: 15px;
+  box-shadow: none;
+  color: white;
+}
+
+.location #inputLocation::placeholder,
+footer .container input::placeholder {
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.location #findBtn,
+footer .container #subscribeBtn {
+  color: white;
+  background-color: var(--secondary-color);
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  padding: 10px;
+}
+
+.location #findBtn {
+  padding: 0 40px;
+}
+
+.card {
+  background-color: #323544;
+  color: #bfc1c8;
+  overflow: hidden;
+}
+.card.middle {
+  background-color: #262936;
+}
+
+.card #selectedLocation {
+  font-size: 1.3em;
+}
+
+.card-header {
+  background: rgb(0, 0, 0, 0.1);
+}
+.card .card-body {
+  padding: 30px 20px !important;
+}
+
+.card-body i#windDirIcon {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card.rounded-start {
+  border-bottom-left-radius: 0 !important;
+  border-top-right-radius: var(--bs-border-radius) !important;
+}
+.card.rounded-end {
+  border-top-right-radius: 0 !important;
+  border-bottom-left-radius: var(--bs-border-radius) !important;
+}
+
+.card #current {
+  font-size: 5.625rem;
+}
+
+footer {
+  padding: 50px 0;
+  background-color: var(--lt-primary-color);
+}
+
+.social ul li i {
+  color: var(--bs-info);
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

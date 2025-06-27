@@ -1,0 +1,32 @@
+@media screen and (min-width: 992px) {
+  .card.rounded-start {
+    border-bottom-left-radius: var(--bs-border-radius) !important;
+    border-top-right-radius: 0 !important;
+  }
+  .card.rounded-end {
+    border-top-right-radius: var(--bs-border-radius) !important;
+    border-bottom-left-radius: 0 !important;
+  }
+
+  .card #current {
+    font-size: 3.7rem;
+  }
+
+  .container .cond {
+    font-size: smaller;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card #current {
+    font-size: 5rem;
+  }
+  .container .cond {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1400px) {
+  .card #current {
+    font-size: 5.625rem;
+  }
+}

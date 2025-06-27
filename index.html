@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <!-- icons -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <!-- assets -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg p-0" data-bs-theme="dark">
+        <div class="container">
+          <a class="navbar-brand d-flex gap-3" href="./">
+            <img src="./images/logo.png" alt="Logo" width="64" />
+            <div class="d-flex flex-column">
+              <h1 class="fw-bold name">Weather</h1>
+              <span class="text-muted tagline">tagline goes here</span>
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live Cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="location">
+        <div class="container">
+          <div class="search position-relative">
+            <input
+              type="text"
+              class="form-control"
+              id="inputLocation"
+              placeholder="Find your location..."
+            />
+            <input id="findBtn" type="button" value="Find" />
+          </div>
+          <div class="row gx-0">
+            <div class="col-lg-4">
+              <div class="card h-100 rounded-0 rounded-start border-0">
+                <div
+                  class="card-header rounded-0 border-0 d-flex justify-content-between"
+                >
+                  <span class="day">Sunday</span>
+                  <span class="date">11 March</span>
+                </div>
+                <div class="card-body">
+                  <div id="selectedLocation">Loading...</div>
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-3"
+                  >
+                    <div id="current" class="mb-0 text-white">
+                      <span>0.00</span>°C
+                    </div>
+                    <div
+                      class="d-flex flex-column align-items-center text-white"
+                    >
+                      <img
+                        class="conditionIcon"
+                        src="https://cdn.weatherapi.com/weather/64x64/night/113.png"
+                        alt="weather condition icon"
+                      />
+                      <span class="condition text-info text-center">Clear</span>
+                      <span class="text-white h6 mb-0">
+                        <span class="highest">0.00</span>°C
+                      </span>
+                      <span class="text-white-50">
+                        <span class="lowest">0.00</span>°C
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="cond text-white-50">
+                      <i class="fa-solid fa-umbrella"></i>
+                      <span id="rainRate">Unknown</span> mm/h
+                    </div>
+                    <div class="cond text-white-50">
+                      <i class="fa-solid fa-wind"></i>
+                      <span id="windSpeed">Unknown</span> km/h
+                    </div>
+                    <div class="cond text-white-50">
+                      <i
+                        id="windDirIcon"
+                        class="fa-solid fa-square-up-right"
+                      ></i>
+                      <span id="windDir">Unknown</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card h-100 middle rounded-0 border-0">
+                <div
+                  class="card-header rounded-0 border-0 d-flex justify-content-between"
+                >
+                  <span class="day">Sunday</span>
+                  <span class="date">11 March</span>
+                </div>
+                <div class="card-body">
+                  <div
+                    class="d-flex flex-column align-items-center text-white-50"
+                  >
+                    <img
+                      class="conditionIcon"
+                      src="https://cdn.weatherapi.com/weather/64x64/night/113.png"
+                      alt="weather condition icon"
+                    />
+                    <span class="text-white h3">
+                      <span class="highest">Unknown</span> °C
+                    </span>
+                    <span class="text-white-50">
+                      <span class="lowest">Unknown</span> °C
+                    </span>
+                    <span class="condition text-info mt-3">Unknown</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card h-100 rounded-0 rounded-end border-0">
+                <div
+                  class="card-header rounded-0 border-0 d-flex justify-content-between"
+                >
+                  <span class="day">Sunday</span>
+                  <span class="date">11 March</span>
+                </div>
+                <div class="card-body">
+                  <div
+                    class="d-flex flex-column align-items-center text-white-50"
+                  >
+                    <img
+                      class="conditionIcon"
+                      src="https://cdn.weatherapi.com/weather/64x64/night/113.png"
+                      alt="weather condition icon"
+                    />
+                    <span class="text-white h3">
+                      <span class="highest">Unknown</span> °C
+                    </span>
+                    <span class="text-white-50">
+                      <span class="lowest">Unknown</span> °C
+                    </span>
+                    <span class="condition text-info mt-3">Unknown</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row gy-3">
+          <div class="col-lg-8">
+            <div class="position-relative">
+              <input
+                type="text"
+                class="form-control"
+                id="newsletter"
+                placeholder="Enter your email to subscribe to our newsletter..."
+              />
+              <input id="subscribeBtn" type="button" value="Subscribe" />
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="social h-100">
+              <ul
+                class="list-unstyled d-flex align-items-center justify-content-center gap-3 h-100 mb-0"
+              >
+                <li><i class="fs-5 fa-brands fa-facebook-f"></i></li>
+                <li><i class="fs-5 fa-brands fa-twitter"></i></li>
+                <li><i class="fs-5 fa-brands fa-google-plus-g"></i></li>
+                <li><i class="fs-5 fa-brands fa-pinterest"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="text-center text-white-50 mt-5">
+          <p class="mb-0">
+            Copyright 2014 Company name. Designed by Themezy. All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
